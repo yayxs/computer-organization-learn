@@ -1,0 +1,22 @@
+{
+  "name": "computer-organization-learn",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yayxs/computer-organization-learn.git"
+  },
+  "keywords": [
+    "编码",
+    "计算机是怎么跑起来的",
+    "深入理解计算机系统",
+    "计算机是怎样运行的"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yayxs/computer-organization-learn/issues"
+  },
+  "homepage": "https://github.com/yayxs/computer-organization-learn#readme"
+}
