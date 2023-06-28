@@ -1,7 +1,7 @@
 {
   "name": "computer-organization-learn",
   "version": "0.0.1",
-  "description": "",
+  "description": "计算机组成原理 学习",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -11,7 +11,11 @@
     "编码",
     "计算机是怎么跑起来的",
     "深入理解计算机系统",
-    "计算机是怎样运行的"
+    "计算机是怎样运行的",
+    "进制",
+    "原码",
+    "反码",
+    "补码"
   ],
   "author": "",
   "license": "ISC",

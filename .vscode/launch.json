@@ -7,76 +7,8 @@
     {
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
-      "name": "weiyunsuan",
-      "program": "${workspaceFolder}/weiyunsuan.js",
-      "request": "launch",
-      "restart": true,
-      "runtimeExecutable": "nodemon",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "type": "node"
-    },
-    {
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "name": "caozuoshu",
-      "program": "${workspaceFolder}/caozuoshu.js",
-      "request": "launch",
-      "restart": true,
-      "runtimeExecutable": "nodemon",
-      "skipFiles": ["<node_internals>/**"],
-      "type": "node"
-    },
-    {
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "name": "hex",
-      "program": "${workspaceFolder}/hex.js",
-      "request": "launch",
-      "restart": true,
-      "runtimeExecutable": "nodemon",
-      "skipFiles": ["<node_internals>/**"],
-      "type": "node"
-    },
-    {
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "name": "jinzhizhuanhuan",
-      "program": "${workspaceFolder}/jinzhizhuanhuan.js",
-      "request": "launch",
-      "restart": true,
-      "runtimeExecutable": "nodemon",
-      "skipFiles": ["<node_internals>/**"],
-      "type": "node"
-    },
-    {
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "name": "main",
-      "program": "${workspaceFolder}/main.js",
-      "request": "launch",
-      "restart": true,
-      "runtimeExecutable": "nodemon",
-      "skipFiles": ["<node_internals>/**"],
-      "type": "node"
-    },
-    {
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "name": "weiyunsuan",
-      "program": "${workspaceFolder}/weiyunsuan.js",
-      "request": "launch",
-      "restart": true,
-      "runtimeExecutable": "nodemon",
-      "skipFiles": ["<node_internals>/**"],
-      "type": "node"
-    },
-    {
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "name": "index",
-      "program": "${workspaceFolder}/index.js",
+      "name": "nodemon",
+      "program": "${workspaceFolder}/app.js",
       "request": "launch",
       "restart": true,
       "runtimeExecutable": "nodemon",
