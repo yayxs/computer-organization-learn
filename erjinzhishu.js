@@ -30,19 +30,4 @@
 const erjinzhi = 0b100111
 const bajinzhi = 0o767
 
-const parseVal = (val, base) => {
-  if (typeof val === 'string') {
-    const n = Number.parseInt(val, base)
-    if (isNaN(n)) {
-      console.warn('is nan')
-    } else {
-      console.log('--', n)
-    }
-  } else {
-    console.warn('not string')
-    return false
-  }
-}
-parseVal('a')
-
 console.log('jinzhi  run')

@@ -1,17 +1,14 @@
-
-const loop = ()=>{
-
+const loop = () => {
   let sum = 0
-  for(let i = 0 ;i<=100;i++){
+  for (let i = 0; i <= 100; i++) {
     sum += 0.1
   }
-  console.log(sum);
+  console.log(sum)
 
-  console.log(0.1+0.2);
+  console.log(0.1 + 0.2)
 }
 
 loop()
-
 
 /**
  * 双精度浮点数：1位符号部分 + 11位指数部分 + 52位尾数部分

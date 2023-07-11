@@ -1,8 +1,3 @@
-const is12 = 12
-
-/**
- *
- * 0000 0000 0000 0000 0000 0000 0000 1100
- */
+const is9 = (9).toString(2)
 
 console.log('app.js run --------------')
