@@ -1,7 +1,5 @@
 {
-  "workbench.colorCustomizations": {
-    "activityBar.foreground": "#fff",
-    "activityBar.inactiveForeground": "#b5b5b5"
-  },
-  "peacock.affectedElements": ["activityBar"]
+  "peacock.affectedElements": [
+    "activityBar"
+  ]
 }
