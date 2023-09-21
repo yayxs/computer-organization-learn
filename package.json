@@ -15,12 +15,16 @@
     "进制",
     "原码",
     "反码",
-    "补码"
+    "补码",
+    "补数"
   ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yayxs/computer-organization-learn/issues"
   },
-  "homepage": "https://github.com/yayxs/computer-organization-learn#readme"
+  "homepage": "https://github.com/yayxs/computer-organization-learn#readme",
+  "devDependencies": {
+    "vite": "^4.4.9"
+  }
 }
