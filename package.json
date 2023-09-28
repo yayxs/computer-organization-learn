@@ -26,5 +26,8 @@
   "homepage": "https://github.com/yayxs/computer-organization-learn#readme",
   "devDependencies": {
     "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.6.3"
   }
 }

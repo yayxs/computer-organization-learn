@@ -1,6 +1,7 @@
 ## blog
 
-- [js JavaScript 中的进制转化]()
+- [js 前端学习计算机组成原理推荐的书](https://github.com/yayxs/computer-organization-learn/tree/main/packages/book)
+- [js JavaScript 中的进制转化](https://github.com/yayxs/computer-organization-learn/tree/main/packages/convert)
 
 《CSAPP》
 
