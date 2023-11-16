@@ -16,7 +16,8 @@
     "原码",
     "反码",
     "补码",
-    "补数"
+    "补数",
+    "ArrayBuffer"
   ],
   "author": "",
   "license": "ISC",
