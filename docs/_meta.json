@@ -1,5 +1,10 @@
 [
   {
+    "text": "arraybuffer",
+    "link": "/arraybuffer/start/introduction",
+    "activeMatch": "/arraybuffer/"
+  },
+  {
     "text": "book",
     "link": "/book/recommend",
     "activeMatch": "/book/"
