@@ -1,3 +1,212 @@
 # ArrayBuffer
 
 - [https://zh.javascript.info/arraybuffer-binary-arrays](https://zh.javascript.info/arraybuffer-binary-arrays)
+- [https://www.javascripture.com/ArrayBuffer](https://www.javascripture.com/ArrayBuffer)
+- [https://wangdoc.com/es6/arraybuffer](https://wangdoc.com/es6/arraybuffer)
+
+::: details
+对固定长度的连续内存空间的引用
+通用的、固定长度的原始二进制数据的一种数据类型
+webgl 有关 浏览器和显卡的通信
+固定长度的连续内存区域
+
+ArrayBuffer 对象代表一段内存 构造函数
+ArrayBuffer 不是某种东西的数组
+:::
+
+import { Sandpack } from '@codesandbox/sandpack-react'
+
+<Sandpack
+  template='vanilla'
+  options={{
+    showConsole: true,
+    showConsoleButton: true
+  }}
+  files={{
+    'index.js': `
+    
+    const ab = new ArrayBuffer(16)
+
+    console.log(ab,ab.byteLength)
+    `
+
+}}
+/>
+
+<img
+  src='https://zh.javascript.info/article/arraybuffer-binary-arrays/arraybuffer-views.svg'
+  alt=''
+  width='603'
+  height='286'
+/>
+
+| a           | b        |                    c |  d  |
+| ----------- | :------- | -------------------: | :-: |
+| Uint8Array  | 1 个字节 |               ff 255 |     |
+| Uint16Array | 2 个字节 |           ffff 65535 |     |
+| Uint32Array | 4 个字节 | ffff ffff 4294967295 |     |
+
+<Sandpack
+  template='vanilla'
+  options={{
+    showConsole: true,
+    showConsoleButton: true
+  }}
+  files={{
+    'index.js': `
+    
+    const buf = new ArrayBuffer(32)
+    const dataview = new DataView(buf)
+    console.log(buf)
+    console.log(dataview)
+    console.log(dataview.getUint8(0)) 
+    `
+
+}}
+/>
+
+<Sandpack
+  template='vanilla'
+  options={{
+    showConsole: true,
+    showConsoleButton: true
+  }}
+  files={{
+    'index.js': `
+    const buffer = new ArrayBuffer(6)
+    const x2 = new Uint8Array(buffer);
+    x2[0] =10
+    x2[1] =1
+    x2[2] =2
+    x2[3] =3
+    x2[4] =4
+    x2[5] =5
+    x2[6] =6
+    x2[7] =7
+
+    console.log(buffer)
+    `
+
+}}
+/>
+
+## 创建
+
+创建指定长度的连续内存
+
+<Sandpack
+  template='vanilla'
+  options={{
+    showConsole: true,
+    showConsoleButton: true
+  }}
+  files={{
+    'index.js': `
+    const buffer = new ArrayBuffer(12)
+    const dataView = new DataView(buffer);
+
+    const int8View = new Int8Array(buffer);
+
+    console.log(dataView)
+    console.log(int8View)
+
+    dataView.setInt32(0, 0x1234ABCD);
+    console.log(dataView.getInt32(0).toString(16));
+
+console.log(dataView.getInt8(0).toString(16));
+console.log(int8View[0].toString(16));
+
+    `
+
+}}
+/>
+
+## slice
+
+<Sandpack
+  template='vanilla'
+  options={{
+    showConsole: true,
+    showConsoleButton: true
+  }}
+  files={{
+    'index.js': `
+
+    const buffer = new ArrayBuffer(12)
+    let x = new Int32Array(buffer);
+    x[0] = 1234 // 4个字节
+
+    console.log(buffer)
+
+    const slice = buffer.slice(4);
+    console.log(slice)
+    `
+
+}}
+/>
+
+## other
+
+<Sandpack
+  template='vanilla'
+  options={{
+    showConsole: true,
+    showConsoleButton: true
+  }}
+  files={{
+    'index.js': `
+
+{
+const buffer = new ArrayBuffer(16) // 16 个字节
+
+console.log(buffer)
+
+const uint8View = new Uint8Array(buffer)
+
+// 设置第一个字节
+uint8View[0] = 42 // 10 进制的 42 数字 是 2a（16 进制）
+}
+
+{
+// dataview
+const buffer1 = new ArrayBuffer(16)
+const dataView = new DataView(buffer1)
+dataView.setInt32(0, 123456789) // 设置 32 位的整数
+
+console.log(buffer1)
+}
+
+{
+const x = new ArrayBuffer(4) // 创建一个 4 字节的 ArrayB
+const dataView = new DataView(x) // 操作 x
+const y = 16909060 // 二进制表示为 00000001 00000010 00000011 00000100
+// 将 y 的不同部分按照字节存储到 x 中
+dataView.setInt8(0, (y >> 24) & 0xff) //
+console.log('x', x)
+console.log(new Uint8Array(x))
+}
+
+{
+// arrayBuffer 转为 hexString
+function arrayBufferToHexString(buffer) {
+// 使用视图
+const uint8View = new Uint8Array(buffer)
+let hexString = ''
+for (let i = 0; i < uint8View.length; i++) {
+let byte = uint8View[i].toString(16) // 转为 16 进制字符串
+
+      if (byte.length === 1) {
+        byte = '0' + byte
+      }
+
+      hexString += byte
+    }
+    console.log(hexString)
+
+}
+}
+
+    `
+
+}}
+/>

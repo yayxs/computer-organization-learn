@@ -1,8 +1,33 @@
 [
   {
+    "text": "number",
+    "link": "/number/start/introduction",
+    "activeMatch": "/number/"
+  },
+  {
+    "text": "bit",
+    "link": "/bit/start/introduction",
+    "activeMatch": "/bit/"
+  },
+  {
+    "text": "byte",
+    "link": "/byte/start/introduction",
+    "activeMatch": "/byte/"
+  },
+  {
+    "text": "binary",
+    "link": "/binary/start/introduction",
+    "activeMatch": "/binary/"
+  },
+  {
     "text": "arraybuffer",
     "link": "/arraybuffer/start/introduction",
     "activeMatch": "/arraybuffer/"
+  },
+  {
+    "text": "operators",
+    "link": "/operators/start/introduction",
+    "activeMatch": "/operators/"
   },
   {
     "text": "book",

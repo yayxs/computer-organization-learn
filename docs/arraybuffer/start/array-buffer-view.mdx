@@ -1,0 +1,20 @@
+# ArrayBufferView
+
+import { Sandpack } from '@codesandbox/sandpack-react'
+
+<Sandpack
+  template='vanilla'
+  options={{
+    showConsole: true,
+    showConsoleButton: true
+  }}
+  files={{
+    'index.js': `
+    
+    const buffer = new ArrayBuffer(12);
+
+    const x = new DataView(buffer);
+    `
+
+}}
+/>

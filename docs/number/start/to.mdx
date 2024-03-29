@@ -1,0 +1,37 @@
+# to
+
+## 十进制整数转换为一个具有固定位数的二进制字符串
+
+import { Sandpack } from '@codesandbox/sandpack-react'
+
+<Sandpack
+  template='vanilla'
+  options={{
+    showConsole: true,
+    showConsoleButton: true
+  }}
+  files={{
+    'index.js': `
+      // 使用内置方法把10进制的数字变为2进制的字符串表示
+
+      function decimalToBinaryWithFixedWidth(num, bits) {
+        if (!Number.isInteger(num)) {
+          // 非整数
+          return ''
+        }
+        if (num < 0 || num >= 2 ** 32) {
+          // 由于JavaScript中的位运算符是针对32位整数的，
+          // 我们需要确保num在[0, 2^32 - 1]的范围内
+
+          return ''
+        }
+        let binary = num.toString(2).padStart(bits, '0')
+
+        return binary
+      }
+      console.log(decimalToBinaryWithFixedWidth(1,32),decimalToBinaryWithFixedWidth(11,32))
+
+    `
+
+}}
+/>
