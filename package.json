@@ -30,11 +30,12 @@
   },
   "homepage": "https://github.com/yayxs/computer-organization-learn#readme",
   "devDependencies": {
-    "rspress": "^1.16.1",
+    "rspress": "^1.18.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
   },
   "dependencies": {
-    "@codesandbox/sandpack-react": "^2.13.7"
+    "@codesandbox/sandpack-react": "^2.13.7",
+    "@theguild/remark-mermaid": "^0.0.6"
   }
 }

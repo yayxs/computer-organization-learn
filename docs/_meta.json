@@ -20,6 +20,16 @@
     "activeMatch": "/binary/"
   },
   {
+    "text": "hexadecimal",
+    "link": "/hexadecimal/start/introduction",
+    "activeMatch": "/hexadecimal/"
+  },
+  {
+    "text": "complement",
+    "link": "/complement/start/introduction",
+    "activeMatch": "/complement/"
+  },
+  {
     "text": "arraybuffer",
     "link": "/arraybuffer/start/introduction",
     "activeMatch": "/arraybuffer/"
@@ -38,5 +48,10 @@
     "text": "utils",
     "link": "/utils/",
     "activeMatch": "/utils/"
+  },
+  {
+    "text": "notes",
+    "link": "/notes/start/introduction",
+    "activeMatch": "/notes/"
   }
 ]
